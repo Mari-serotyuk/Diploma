@@ -1,0 +1,109 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header{
+    background-color: #F3C6BD;
+    padding: 30px 0;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header-container , .info-container , .company-ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo > div:first-child{
+    margin-right: 15px;
+}
+
+.logo-bold{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #2B292D;
+}
+
+.logo-regular{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-li, .company-li{
+    display: inline-block;
+}
+
+.header-li:not(:last-child){
+    margin-right: 20px;
+}
+
+.header-li > a{
+    font-size: 18px;
+    line-height: 25px;
+    color: #2B292D;
+    text-decoration: none;
+}
+
+.header-li > a:hover{
+    font-weight: bold;
+}
+
+.header-nav > div{
+    margin-left: 75px;
+}
+
+.button{
+    border: none;
+    font-size: 18px;
+    line-height: 13px;
+    padding: 17px 28px;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: white;
+    color: #3040C4;
+    transition: 1s;
+}
+
+.info{
+    background-color: #F4F5F7;
+}
+
+.info1-bold , .info2-bold{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    color: #2B292D;
+}
+
+.info1-regular , .info2-regular{
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+    color: #2B292D;
+}
+
+.info1, .info2{
+    margin: 76px 0;
+}
