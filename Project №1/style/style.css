@@ -107,3 +107,7 @@ body{
 .info1, .info2{
     margin: 76px 0;
 }
+
+.company-ul{
+    padding: 30px;
+}
