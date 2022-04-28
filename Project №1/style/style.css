@@ -244,7 +244,6 @@ body{
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    height: 100hv;
     margin-bottom: 91px;
 }
 
