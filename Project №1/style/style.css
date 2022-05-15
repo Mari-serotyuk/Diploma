@@ -85,6 +85,26 @@ body{
     transition: 1s;
 }
 
+.check{
+    width: 30px;
+    height: 2px;
+    background: black;
+    transition: 500ms linear;
+}
+
+.check:not(:last-of-type){
+    margin-bottom: 4px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox, .check-wrapper{
+    display: none;
+}
+
 .button:hover{
     background: white;
     color: #3040C4;
@@ -223,6 +243,8 @@ body{
     padding: 100px 0;
 }
 
+
+
 .busy-flex{
     display: flex;
     align-items: center;
@@ -282,13 +304,11 @@ body{
     transition-duration: 2s;
 }
 
-.info-communicate{
-    padding: 40px 0 100px;
-}
 
 .info-flex{
     display: flex;
     justify-content: space-between;
+    padding: 40px 0 60px;
 }
 
 .info-p{
@@ -562,8 +582,6 @@ body{
     padding: 135px 0 60px;
 }
 
-
-
 .logo-text{
     font-size: 18px;
     line-height: 26px;
@@ -589,6 +607,9 @@ body{
     margin-bottom: 15px;
 }
 
+.footer-list-adapt{
+    display: none;
+}
 
 .footer-list__ul > li{
     font-size: 18px;
@@ -622,7 +643,6 @@ body{
     padding-right: 15px;
 }
 
-
 .bottom-logo{
     cursor: pointer;
 }
@@ -632,11 +652,6 @@ body{
     text-decoration: none;
 }
 
-@media (max-width:2000px){
-    .footer-list-adapt{
-        display: none;
-    }
-}
 
 @media (max-width: 1200px){
     .container{
@@ -645,6 +660,10 @@ body{
 
     .header{
         padding: 15px 0;
+    }
+    
+    .header-text{
+        max-width: 400px;
     }
 
     .info1{
@@ -657,10 +676,78 @@ body{
         max-width: 750px;
     }
 
+    .checkbox, .check-wrapper{
+        display: block;
+    }
+
     .header-wrapper{
         display: block;
         position: static;
         padding-bottom: 0;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    .menu{
+        position: relative;
+    }
+
+    .check-wrapper{
+        z-index: 2;
+    }
+
+    .checkbox{
+        position: absolute;
+        z-index: 3;
+        display: block;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+    }
+
+    .checkbox:checked ~ .check-wrapper>.check:first-of-type{
+        transform: rotate(45deg) translate(3px, 3px)
+    }
+    
+    .checkbox:checked ~ .check-wrapper>.check:last-of-type{
+        transform: rotate(-45deg) translate(5px, -6px)
+    }
+
+    .checkbox:checked ~ .check-wrapper>.check:nth-child(2){
+        opacity: 0;
+    }
+
+    .checkbox:checked ~ .header-nav{
+        display: block;
+        position: fixed;
+        background: #F3C6BD;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .header-nav{
+        text-align: center;
+    }
+
+    .header-nav > div{
+        margin-left: 0;
+    }
+
+    ul{
+        margin-top: 10%;
+    }
+
+    .header-li{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .header-li:not(:last-child){
+        margin-right: 0;
     }
 
     .header-wrapper > div:last-of-type{
@@ -735,10 +822,6 @@ body{
     .free-flex > div:not(:first-of-type){
         margin-bottom: 50px;
     }
-
-    .footer-info{
-        align-items: flex-start;
-    }
 }
 
 @media (max-width: 800px){
@@ -781,7 +864,7 @@ body{
        margin-bottom: 110px;
     }
 
-    .info3{
+    .info3, .header-text{
         margin: 30px auto;
     }
 
@@ -804,17 +887,21 @@ body{
         max-width: 430px;
     }
 
-    .footer-info, .logo{
+    .footer-info, .logo-center{
         flex-direction: column;
         align-items: center;
     }
 
-    .logo > div:first-child{
+    .footer-info{
+        padding: 60px 0 40px;
+    }
+
+    .logo-center > div:first-child{
         margin-right: 0;
         margin-bottom: 15px;
     }
 
-    .logo > div:last-child, .logo-text, .footer-link{
+    .logo-center > div:last-child, .logo-text, .footer-link{
         text-align: center;
     }
 
@@ -844,6 +931,10 @@ body{
 
     .title{
         font-size: 50px;
+    }
+
+    .logo-disappear{
+        display: none;
     }
 
     .info3{
@@ -901,8 +992,12 @@ body{
         font-size: 45px;
     }
 
-    .button1, .button2{
+    .button1, .button2, .button{
         width: 100%;
+    }
+
+    .button-white{
+        margin-top: 15px;
     }
 
     .button1{
