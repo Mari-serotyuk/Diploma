@@ -146,7 +146,11 @@ body{
 
 .button-white{
     background: white;
-    color: #3040C4;;
+    color: #3040C4;
+}
+
+.header-img > img{
+    width: 90%;
 }
 
 .info{
@@ -173,6 +177,69 @@ body{
 
 .company-ul{
     padding: 30px 0;
+}
+
+.customers{
+    padding: 100px 0;
+    position: relative;
+}
+
+.text-mini-green{
+    color: #009B4D;
+}
+
+.customers-img1{
+    position: absolute;
+    left: 0;
+    top: 230px;
+}
+
+.customers-items{
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(43, 41, 45, 0.2);
+    margin-bottom: 20px;
+}
+
+.customers-flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.customers-flex > div:first-child{
+    margin-right: 15px;
+}
+
+.customers-text{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.customers-items > p{
+    margin-bottom: 17px;
+    display: none;
+}
+
+.customers-click{
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 450px;
+    color: black;
+}
+
+.customers-img2{
+    position: absolute;
+    right: 0;
+}
+
+.toggleColor-title{
+    color: #3040C4;
+}
+
+.border-bottom__active{
+    box-sizing: border-box;
+    border-bottom: 3px solid #3040C4;
 }
 
 .manage{
@@ -216,8 +283,18 @@ body{
     color: #F1592B;
 }
 
+.manage-inner, .text-manage{
+    margin: 0 auto;
+}
+
+.manage-bg{
+    background: white;
+    border-bottom: 5px solid #0185D0;
+    box-sizing: border-box;
+}
+
 .manage-p{
-    padding: 30px 0 28px;
+    padding: 30px 30px 28px;
     max-width: 460px;
     font-size: 20px;
     line-height: 28px;
@@ -229,23 +306,15 @@ body{
     font-weight: bold;
 }
 
-.manage-p::after{
-    content: "";
-    position: absolute;
-    width: 515px;
-    height: 5px;
-    background: #0185D0;
-    left: -25px;
-    bottom: -75px;
-}
+.logo-center{
+    padding: 30px 30px 28px;
+ }
 
 .busy{
     padding: 100px 0;
 }
 
-
-
-.busy-flex{
+.busy-flex, .manage-flex, .customers-container__flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -434,6 +503,74 @@ body{
     margin: 22px 0;
 }
 
+.about-item__container{
+    max-width: 750px;
+    margin: 63px auto;
+}
+
+.about-items{
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 26px;
+    margin-bottom: 20px;
+}
+
+.about-items > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-items > p{
+    margin-top: 20px;
+    display: none;
+}
+
+.about-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-position{
+    width: 408px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.about-city{
+    font-size: 18px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+.about-icon{
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+.click-text{
+    max-width: 410px;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.active{
+    transform: rotate(90deg);
+    transition: 1s;
+}
+
+.toggleBg{
+    background: #3141C5;
+}
+
+.toggleColor{
+    color: white;
+}
+
 .info3{
     margin: 90px auto;
 }
@@ -613,7 +750,7 @@ body{
 
 .footer-list__ul > li{
     font-size: 18px;
-    line-height: 30px;
+    line-height: 40px;
     color: rgba(43, 41, 45, 0.6);
 }
 
@@ -665,6 +802,18 @@ body{
     .header-text{
         max-width: 400px;
     }
+
+   .customers-container__flex{
+       flex-direction: column;
+   }
+
+   .customers-img2{
+       position: static;
+   }
+
+   .text-mini-green, .title-customers, .description-customers{
+       text-align: center;
+   }
 
     .info1{
         max-width: 500px;
@@ -768,6 +917,15 @@ body{
         margin: 30px 0;
     }
 
+    .manage-flex{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .manage-img{
+        margin: 70px 0;
+    }
+
     .busy-flex{
         flex-direction: column;
         text-align: center;
@@ -829,6 +987,10 @@ body{
         max-width: 500px;
     }
 
+    .title{
+        font-size: 60px;
+    }
+
     .header-wrapper > div:first-child{
         text-align: center;
     }
@@ -850,8 +1012,17 @@ body{
         justify-content: space-around;
     }
 
-    .manage-p::after{
+    .customers{
+        padding: 50px 0;
+    }
+
+    .customers-img1{
         display: none;
+    }
+
+    .customers-img2 > img{
+        align-self: center;
+        width: 100%;
     }
 
     .wrapper{
@@ -887,7 +1058,7 @@ body{
         max-width: 430px;
     }
 
-    .footer-info, .logo-center{
+    .footer-info, .logo-center, .logo-footer-center{
         flex-direction: column;
         align-items: center;
     }
@@ -903,6 +1074,11 @@ body{
 
     .logo-center > div:last-child, .logo-text, .footer-link{
         text-align: center;
+    }
+
+    .logo-footer-center > div:first-child{
+        margin-right: 0;
+        margin-bottom: 15px;
     }
 
     .logo-text{
@@ -921,6 +1097,10 @@ body{
 
     .footer-list-adapt > div:last-child{
         text-align: end;
+    }
+
+    .logo-footer-center > div:last-child{
+        text-align: center;
     }
 }
 
@@ -977,6 +1157,12 @@ body{
         max-width: 310px;
     }
 
+    .title{
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 45px;
+    }
+
     .company-ul{
         display: flex;
         flex-wrap: wrap;
@@ -986,6 +1172,10 @@ body{
         flex: 1 1 50%;
         text-align: center;
         justify-content: space-around;
+    }
+
+    .manage{
+        padding-bottom: 40px;
     }
 
     .info2-main{
@@ -1006,6 +1196,35 @@ body{
 
     .button2{
         margin-left: 0;
+    }
+
+    .about-item__text{
+        flex-wrap: wrap;
+    }
+
+    .about-item__text{
+        position: relative;
+    }
+
+    .about-position{
+        width: 200px;
+        margin-bottom: 7px;
+    }
+
+    .about-icon{
+        position: absolute;
+        right: 0;
+        align-self: center;
+    }
+
+    .customers-text{
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .click-text, .customers-click{
+        font-size: 16px;
+        line-height: 22px;  
     }
 
     .wrapper{
@@ -1038,12 +1257,6 @@ body{
         max-width: 290px;
     }
 
-    .title{
-        font-weight: bold;
-        font-size: 50px;
-        line-height: 45px;
-    }
-
     .info1{
         max-width: 360px;
     }
@@ -1059,13 +1272,13 @@ body{
     }
 
     .company-li{
-        flex: 1 50%;
+        flex: 1 1 50%;
         text-align: center;
         justify-content: space-between;
     }
 
     .company-li > img{
-        width: 50%
+        max-width: 70%;
     }
 
     .logo-text, .footer-hr, .footer-list-adapt{
