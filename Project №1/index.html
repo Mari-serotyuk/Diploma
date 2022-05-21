@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./wow/animate.css">
+    <link rel="stylesheet" href="./style/modal.css">
 </head>
 <body>
     <header class="header">
@@ -70,12 +71,12 @@
                     <button class="button">
                         Get Started
                     </button>
-                    <button class="button button-white">
+                    <button id="modal-button" class="button button-white">
                         Learn More
                     </button>
                 </div>
             </div>
-            <div>
+            <div class="header-img">
                 <img src="./img/header.png" alt="">
             </div>
         </div>
@@ -122,22 +123,82 @@
             </li>
         </ul>
     </div>
+    <section class="customers">
+        <div class="container customers-container__flex">
+            <img class="customers-img1" src="./img/ouch.png" alt="">
+            <div class="customers-info">
+                <p class="text-mini text-mini-green">
+                    Features
+                </p>
+                <h3 class="title-inner title-customers">
+                    Easily find leads and customers
+                </h3>
+                <p class="text-inner description-customers">
+                    Send one-off and automated email, push, and in-app messages to people. Create better stories.
+                </p>
+                <div class="customers-container">
+                    <div class="customers-items">
+                        <div class="customers-flex"> 
+                            <div>
+                                <img src="./img/customers-img1.svg" alt="">
+                            </div>
+                            <p class="customers-text">
+                                Acquire new customers
+                            </p>
+                        </div>
+                        <p class="customers-click">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                    <div class="customers-items">
+                        <div class="customers-flex"> 
+                            <div>
+                                <img src="./img/customers-img2.svg" alt="">
+                            </div>
+                            <p class="customers-text">
+                                Engage users
+                            </p>
+                        </div>
+                        <p class="customers-click">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                    <div class="customers-items">
+                        <div class="customers-flex"> 
+                            <div>
+                                <img src="./img/customers-img3.svg" alt="">
+                            </div>
+                            <p class="customers-text">
+                                Develop across platforms
+                            </p>
+                        </div>
+                        <p class="customers-click">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="customers-img2">
+                <img src="./img/Invision Screen.png" alt="">
+            </div>
+        </div>
+    </section>
     <section class="manage">
-        <div class="container busy-flex">
-            <div>
-                <img class="manage-img" src="./img/manage.png" alt="">
+        <div class="container manage-flex">
+            <div class="manage-img">
+                <img src="./img/manage.png" alt="">
             </div>
             <div>
                 <p class="text-mini text-mini-orange">
                     Team Inbox
                 </p>
-                <h3 class="title-inner wow swing">
+                <h3 class="title-inner manage-inner wow swing">
                     Manage conversations
                 </h3>
-                <p class="text-inner">
+                <p class="text-inner text-manage">
                     One place to manage and respond to all conversations with leads and users. Receive messages from leads.
                 </p>
-                <div>
+                <div class="manage-bg">
                     <p class="manage-p">
                         “Great widgets. Great selection. Great design <span>easy to implement</span>. Definitely a huge time saver for a web developer!”
                     </p>
@@ -220,9 +281,9 @@
                 <p class="info2-bold">
                         Engage Visitors
                 </p>
-                <h1 class="info2-main">
+                <h3 class="info2-main">
                         Understand your audience
-                </h1>
+                </h3>
                 <p class="info2-regular">
                         Early stage company? Eligible applicants get all of our products for just $49 a month.
                 </p>
@@ -272,6 +333,73 @@
             </div>
         </section>
     </div>
+    <section>
+        <div class="container">
+            <div class="info2">
+                <h3 class="info2-main">
+                    We’re hiring
+                </h3>
+                <p class="info2-regular">
+                    We’re a team of lifelong learners. We’re equal parts left and right brained.
+                </p>
+                <div>
+                    <button class="button">
+                        More about Company
+                    </button>
+                </div>
+            </div>
+            <div class="about-item__container">
+                <div class="about-items">
+                    <div class="about-item__text">
+                        <p class="about-position">
+                            Front-End Developer
+                        </p>
+                        <p class="about-city">
+                            Los Angeles / Remote
+                        </p>
+                        <p class="about-icon">
+                            >
+                        </p>
+                    </div>
+                    <p class="click-text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                </div>
+                <div class="about-items">
+                    <div class="about-item__text">
+                        <p class="about-position">
+                            Community Manager
+                        </p>
+                        <p class="about-city">
+                            New York / Full-Time
+                        </p>
+                        <p class="about-icon">
+                            >
+                        </p>
+                    </div>
+                    <p class="click-text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                </div>
+                <div class="about-items">
+                    <div class="about-item__text">
+                        <p class="about-position">
+                            UX/UI Designer         
+                        </p>
+                        <p class="about-city">
+                            New York / Full-Time
+                        </p>
+                        <p class="about-icon">
+                            >
+                        </p>
+                    </div>
+                    <p class="click-text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="container">
             <div class="info3">
                 <h1 class="info3-main">
@@ -282,27 +410,6 @@
                 </p>
             </div>
             <div class="gallery">
-                <!-- <div class="gallery-item1">
-                    <img src="./img/img1.png" alt="img1">
-                </div>
-                <div class="gallery-item2">
-                    <img src="./img/img2.png" alt="img2">
-                </div>
-                <div class="gallery-item3">
-                    <img src="./img/img3.png" alt="img3">
-                </div>
-                <div class="gallery-item4">
-                    <img src="./img/img4.png" alt="img4">
-                </div>
-                <div class="gallery-item5">
-                    <img src="./img/img5.png" alt="img5">
-                </div>
-                <div class="gallery-item6">
-                    <img src="./img/img6.png" alt="img6">
-                </div>
-                <div class="gallery-item7">
-                    <img src="./img/img7.png" alt="img7">
-                </div> -->
                 <img src="./img/img1.png" alt="img1">
                 <img src="./img/img2.png" alt="img2">
                 <img src="./img/img3.png" alt="img3">
@@ -340,7 +447,7 @@
     <footer>
         <div class="container footer-info">
             <div class="footer-logo">
-                <div class="logo logo-center">
+                <div class="logo logo-footer-center">
                     <div>
                          <img src="./img/logo.svg" alt="">
                     </div>
@@ -443,9 +550,25 @@
             </div>
         </div>
     </footer>
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-img">
+                    <img src="./img/phone.png" alt="">
+                </div>
+                <p class="modal-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nihil excepturi, optio repudiandae suscipit dolorem.
+                </p>
+            </div>
+            <p class="close">
+                X
+            </p>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="./script/script.js"></script>
+    <script src="./script/modal.js"></script>
     <script src="./wow/wow.min.js"></script>
               <script>
               new WOW().init();
