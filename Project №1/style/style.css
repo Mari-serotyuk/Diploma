@@ -235,7 +235,7 @@ body{
 .customers-img2{
     position: absolute;
     right: 0;
-    bottom: 50px;
+    top: 120px;
 }
 
 .toggleColor-title{
