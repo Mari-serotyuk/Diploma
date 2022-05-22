@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./wow/animate.css">
     <link rel="stylesheet" href="./style/modal.css">
@@ -29,8 +31,8 @@
                     </p>
                 </div>
             </div>
-            <div class="menu">
-                <input class="checkbox" type="checkbox">
+            <div id="menuToggle" class="menu">
+                <input id="toggleChecbox" class="checkbox" type="checkbox">
                 <div class="check-wrapper">
                     <div class="check"></div>
                     <div class="check"></div>
@@ -124,8 +126,10 @@
         </ul>
     </div>
     <section class="customers">
-        <div class="container customers-container__flex">
-            <img class="customers-img1" src="./img/ouch.png" alt="">
+        <div class="customers-img1">
+            <img src="./img/ouch.png" alt="">
+        </div>
+        <div class="container customers-main">
             <div class="customers-info">
                 <p class="text-mini text-mini-green">
                     Features
@@ -178,9 +182,9 @@
                     </div>
                 </div>
             </div>
-            <div class="customers-img2">
-                <img src="./img/Invision Screen.png" alt="">
-            </div>
+        </div>
+        <div class="customers-img2">
+            <img src="./img/Invision Screen.png" alt="">
         </div>
     </section>
     <section class="manage">
@@ -333,6 +337,63 @@
             </div>
         </section>
     </div>
+    <section class="carousel">
+        <div class="container carousel-container">
+            <div class="carousel-content">
+                <div>
+                    <p class="carousel-text">
+                        Trusted by the world’s most innovative businesses – big and small
+                    </p>
+                    <p class="carousel-quote">
+                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </p>
+                    <div class="carousel-director">
+                        <p class="logo-bold">
+                            Viella Malkovich
+                        </p>
+                        <p class="logo-regular">
+                            Creative Director at Johnson
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p class="carousel-text">
+                        Trusted by the world’s most innovative businesses – big and small
+                    </p>
+                    <p class="carousel-quote">
+                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </p>
+                    <div class="carousel-director">
+                        <p class="logo-bold">
+                            Viella Malkovich
+                        </p>
+                        <p class="logo-regular">
+                            Creative Director at Johnson
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p class="carousel-text">
+                        Trusted by the world’s most innovative businesses – big and small
+                    </p>
+                    <p class="carousel-quote">
+                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </p>
+                    <div class="carousel-director">
+                        <p class="logo-bold">
+                            Viella Malkovich
+                        </p>
+                        <p class="logo-regular">
+                            Creative Director at Johnson
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-img">
+                <img src="./img/balloon.png" alt="">
+            </div>
+        </div>
+    </section>
     <section>
         <div class="container">
             <div class="info2">
@@ -567,6 +628,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
     <script src="./script/modal.js"></script>
     <script src="./wow/wow.min.js"></script>
