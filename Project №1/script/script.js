@@ -1,3 +1,12 @@
+$('#menuToggle #toggleCheckbox').change(function() {
+    if(this.checked) {
+        $('body').css({'overflow': "hidden" })
+    }
+    else {
+        $('body').css({'overflow': "visible" })
+    }
+});
+
 $('.busy').parallax({imageSrc: 'http://galerey-room.ru/img_2/806dac5a7bc9df2707b24b09053d91ed.jpg',
 speed: 0.01
 });
@@ -14,3 +23,9 @@ $('.about-items > div').on('click', function(){
     $(this).toggleClass('toggleColor');
     $(this).next('p').slideToggle(300).toggleClass('toggleColor');
 })
+
+$('.carousel-content').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+});
