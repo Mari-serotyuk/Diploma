@@ -53,7 +53,7 @@
     }
 
     .modal{
-        width: 100%;
+        width: 500px;
     }
 
     .modal-text{
@@ -71,6 +71,10 @@
         max-width: 430px;
     }
 
+    .modal{
+        max-width: 430px;
+    }
+
     .modal-text{
         font-size: 16px;
         line-height: 20px;
@@ -79,9 +83,13 @@
 
 }
 
-/* @media (max-width: 480px){
+@media (max-width: 480px){
     .container{
         max-width: 310px;
+    }
+
+    .modal{
+        max-width: 310px
     }
 
     .modal-text{
@@ -107,8 +115,7 @@
         max-width: 250px;
     }
 
-    .modal-text{
-        font-size: 8px;
-        line-height: 13px;
+    .modal{
+        max-width: 250px;
     }
-} */
+}

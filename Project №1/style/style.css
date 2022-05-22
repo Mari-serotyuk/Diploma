@@ -184,6 +184,10 @@ body{
     position: relative;
 }
 
+.customers-info{
+    max-width: 460px;
+}
+
 .text-mini-green{
     color: #009B4D;
 }
@@ -231,6 +235,7 @@ body{
 .customers-img2{
     position: absolute;
     right: 0;
+    bottom: 50px;
 }
 
 .toggleColor-title{
@@ -244,7 +249,6 @@ body{
 
 .manage{
     background: rgba(252, 240, 227, 0.4);
-    padding: 100px 0;
 }
 
 .manage-img{
@@ -310,14 +314,11 @@ body{
     padding: 30px 30px 28px;
  }
 
-.busy{
-    padding: 100px 0;
-}
-
-.busy-flex, .manage-flex, .customers-container__flex{
+.busy-flex, .manage-flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 100px 0;
 }
 
 .text-mini{
@@ -501,6 +502,56 @@ body{
     line-height: 28px;
     text-align: center;
     margin: 22px 0;
+}
+
+.carousel{
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.carousel-text{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #3142C6;
+    margin-bottom: 28px;
+}
+
+.carousel-quote{
+    margin: 0 auto;
+    max-width: 750px;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: #2B292D;
+    margin-bottom: 34px;
+}
+
+.carousel-director{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 8px;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #3142C5;
+}
+
+.slick-dots li {
+    margin: 0;
+   
+}
+
+.carousel-img >img{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
 }
 
 .about-item__container{
@@ -803,15 +854,13 @@ body{
         max-width: 400px;
     }
 
-   .customers-container__flex{
-       flex-direction: column;
+   .customers-info{
+       margin: 0 auto;
+       text-align: center;
    }
 
    .customers-img2{
        position: static;
-   }
-
-   .text-mini-green, .title-customers, .description-customers{
        text-align: center;
    }
 
@@ -972,6 +1021,15 @@ body{
         display: none;
     }
 
+    .carousel-img{
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    .carousel-img > img{
+        position: static;
+    }
+
     .free-flex{
         flex-direction: column-reverse;
         text-align: center;
@@ -1023,6 +1081,14 @@ body{
     .customers-img2 > img{
         align-self: center;
         width: 100%;
+    }
+
+    .manage-img > img{
+        width: 100%;
+    }
+
+    .carousel-content{
+        max-width: 570px;
     }
 
     .wrapper{
@@ -1131,7 +1197,11 @@ body{
     }
 
     .busy img, .manage img{
-        width: 100%;
+        width: 80%;
+    }
+
+    .carousel-content{
+        max-width: 450px;
     }
 
     .info-p{
@@ -1198,6 +1268,7 @@ body{
         margin-left: 0;
     }
 
+
     .about-item__text{
         flex-wrap: wrap;
     }
@@ -1250,6 +1321,10 @@ body{
         grid-area: two;
         display: none;
     }
+
+    .carousel-img > img{
+        width: 90%;
+    }
 }   
 
 @media (max-width: 360px){
@@ -1279,6 +1354,21 @@ body{
 
     .company-li > img{
         max-width: 70%;
+    }
+
+    .carousel-content{
+        max-width: 290px;
+        margin: 0 auto;
+    }
+
+    .carousel-text{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .carousel-quote{
+        font-size: 24px;
+        line-height: 34px;
     }
 
     .logo-text, .footer-hr, .footer-list-adapt{
@@ -1315,5 +1405,9 @@ body{
 
     .text-inner{
         font-size: 20px;
+    }
+
+    .carousel-content{
+        max-width: 250px;
     }
 }
