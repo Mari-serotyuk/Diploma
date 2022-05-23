@@ -840,6 +840,20 @@ body{
     text-decoration: none;
 }
 
+#up{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: #F3C6BD;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#up > i{
+    color: white;
+}
+
 
 @media (max-width: 1200px){
     .container{
