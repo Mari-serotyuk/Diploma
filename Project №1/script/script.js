@@ -29,3 +29,48 @@ $('.carousel-content').slick({
     autoplaySpeed: 5000,
     dots: true,
 });
+
+$(window).scroll(function(){
+    if($(this).scrollTop()> 500){
+        $('#up').fadeIn();
+    }else{
+        $('#up').fadeOut();
+    }
+})
+
+$('#up').on('click', function(){
+    $('html, body').animate({scrollTop: 0}, 1000)
+})
+
+$('#home').on('click', function(e){
+    e.preventDefault();
+    $('html, body').animate({scrollTop: $('#about').offset().top}, 500)
+})
+
+$('#stories').on('click', function(e){
+    e.preventDefault();
+    $('html, body').animate({scrollTop: $('#manage').offset().top}, 500)
+})
+
+$('#button').on('click', function(e){
+    e.preventDefault();
+
+    let email = $('#email').val().trin();
+
+    if(email ==""){
+        $('#error-email').text('Enter your email');
+    }
+
+    $.ajax({
+        url: 'ajax/telegram.php',
+        type: 'POST',
+        cache: false,
+        data: {'email': email},
+        dataType: 'html',
+        success: function(){
+            $('#email').val('');
+            $('#error-email').text('');
+            $('#button').prop('disabled', false)
+        }
+    })
+})
