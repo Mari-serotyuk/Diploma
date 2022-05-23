@@ -44,12 +44,16 @@ $('#up').on('click', function(){
 
 $('#home').on('click', function(e){
     e.preventDefault();
-    $('html, body').animate({scrollTop: $('#about').offset().top}, 500)
+    $('html, body').animate({scrollTop: $('#about').offset().top}, 500);
+    document.getElementById("checkbox").checked=false;
+    $('body').css({'overflow': 'visible'})
 })
 
 $('#stories').on('click', function(e){
     e.preventDefault();
-    $('html, body').animate({scrollTop: $('#manage').offset().top}, 500)
+    $('html, body').animate({scrollTop: $('#manage').offset().top}, 500);
+    document.getElementById("checkbox").checked=false;
+    $('body').css({'overflow': 'visible'})
 })
 
 $('#button').on('click', function(e){
