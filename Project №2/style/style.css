@@ -286,6 +286,14 @@ body{
     background: white;
     border: 1px solid #FF9700;
     border-radius: 30px;
+    transition: 2s;
+}
+
+.button:hover{
+    color:white;
+    background: #FF9700;
+    border: 1px solid white;
+    transition: 2s;
 }
 
 .carousel{
@@ -310,7 +318,7 @@ body{
 }
 
 .gallery_item img{
-    width: 100%;
+    width: 270px;
 }
 
 .gallery_item:hover > .gallery-description{
@@ -367,7 +375,7 @@ body{
     left: 0;
     display: none;
     background:#A3A9B7;
-    padding: 20px 30px 22px 30px;
+    padding: 20px 10px 35px 30px;
     transition: 2s;
 }
 
@@ -396,4 +404,13 @@ body{
     background: #A3A9B7;
     top: 10px;
     left: -60px;
+}
+
+.slick-dots li button{
+    content: "";
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    opacity: .25;
+    color: black;
 }
