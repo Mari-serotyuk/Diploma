@@ -12,18 +12,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/modal.css">
 </head>
 <body>
     <section class="header">
-        <div class="header-logo">
-            <div class="logo-line">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+        <div class="menu">
+            <div class="header-logo">
+                <div class="logo-line">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <p class="header-logo__text">
+                    BE Arc
+                </p>
             </div>
-            <p class="header-logo__text">
-                BE Arc
-            </p>
+            <div class="click-info">
+                <ul class="click-info__ul">
+                    <li>
+                        <a id="home" href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Workspace</a>
+                    </li>
+                    <li>
+                        <a href="">Service</a>
+                    </li>
+                    <li>
+                        <a href="">Events</a>
+                    </li>
+                    <li>
+                        <a href="">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="button-header">
+                    <div>
+                        <button class="button">
+                            Log In
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container header-container">
            <p class="header-text">
@@ -54,13 +91,6 @@
         </div>
     </section>
     <div class="container container-main">
-        <div class="vertical-text">
-            <h1 class="vertical-title">
-                Be heaven 
-            </h1>
-            <p class="vertical-p">
-                Your Architecture
-            </p>
         </div>
         <div class="bg-section">
             <div class="bg-img">
@@ -71,14 +101,22 @@
                     BUILDING
                 </h3>
                 <div class="bg-link">
-                    <a href="">
+                    <a id="projects" href="">
                         See project  >  
                     </a>
                 </div>
             </div>
         </div>
+        <div class="vertical-text">
+            <h1 class="vertical-title">
+                Be heaven 
+            </h1>
+            <p class="vertical-p">
+                Your Architecture
+            </p>
+        </div>
     </div>
-    <div class="container about-container">
+    <div id="about" class="container about-container">
             <div class="about-img">
                 <img src="./img/about-img.png" alt="">
             </div>
@@ -105,13 +143,13 @@
                     </p>
                 </div>
                 <div>
-                    <button class="button">
+                    <button id="modal-button" class="button">
                         Order a design
                     </button>
                 </div>
             </div>
         </div>
-    <section class="projects">
+    <section id="last-projects" class="projects">
         <div class="container projects-container">
             <h3 class="title-inner">
                 Lastest Projects
@@ -470,8 +508,259 @@
                 </div>
         </div>
     </section>
+    <section class="services">
+        <div class="container services-container">
+            <div class="services-discription">
+                <h4 class="mini-title_inner">
+                    WHAT WE DO
+                </h4>
+                <h3 class="title-inner">
+                    Be heaven Your Architecture
+                </h3>
+                <p class="text-inner">
+                    For us, design the means. The starting points are goals,strategies and expe-
+                    tations, but it transcends them to create a new and better reality. Design is
+                    transformative. For us, designis the means.  
+                </p>
+                <div class="wrapper">
+                    <div class="wrapper-item">
+                        <img src="./img/consulting1.png" alt="">
+                        <p class="wrapper-text">
+                            Consulting
+                        </p>
+                    </div>
+                    <div class="wrapper-item">
+                        <img src="./img/consulting2.png" alt="">
+                        <p class="wrapper-text">
+                            Consulting
+                        </p>
+                    </div>
+                    <div class="wrapper-item">
+                        <img src="./img/interior.png" alt="">
+                        <p class="wrapper-text">
+                            Interior Design
+                        </p>
+                    </div>
+                    <div class="wrapper-item">
+                        <img src="./img/product.png" alt="">
+                        <p class="wrapper-text">
+                            Product Design
+                        </p>
+                    </div>
+                </div>
+                <div class="wrapper-button">
+                    <button class="button">
+                        Order a design
+                    </button>
+                </div>
+            </div>
+            <div class="services-img">
+                <img src="./img/services-img.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="clients">
+        <div class="container-clients">
+            <h3 class="title-inner title-clients">
+                Our Clients & Testerminal
+            </h3>
+            <div class="carousel">
+                <div>
+                    <div class="clients-content">
+                        <div class="clients-img">
+                            <img src="./img/clients-img.png" alt="">
+                        </div>
+                        <div class="clients-text">
+                            <p class="name-client">
+                                Antonio Hernandez
+                            </p>
+                            <p class="company-client">
+                                NASA
+                            </p>
+                            <p class="quote-client">
+                                Love is like a butterfly, the more you chase it, the more it will elude you. 
+                                But if you turn your attention towards other things it will come and softly
+                                sit on your shoulder.         
+                            </p>
+                            <div class="logo-company">
+                                <img src="./img/logo-company1.png" alt="">
+                                <img src="./img/logo-company2.png" alt="">
+                                <img src="./img/logo-company3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="clients-content"> 
+                        <div class="clients-img">
+                            <img src="./img/clients-img.png" alt="">
+                        </div>
+                        <div class="clients-text">
+                            <p class="name-client">
+                                Antonio Hernandez
+                            </p>
+                            <p class="company-client">
+                                NASA
+                            </p>
+                            <p class="quote-client">
+                                Love is like a butterfly, the more you chase it, the more it will elude you. 
+                                But if you turn your attention towards other things it will come and softly
+                                sit on your shoulder.         
+                            </p>
+                            <div class="logo-company">
+                                <img src="./img/logo-company4.png" alt="">
+                                <img src="./img/logo-company1.png" alt="">
+                                <img src="./img/logo-company2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="clients-content">
+                        <div class="clients-img">
+                            <img src="./img/clients-img.png" alt="">
+                        </div>
+                        <div class="clients-text">
+                            <p class="name-client">
+                                Antonio Hernandez
+                            </p>
+                            <p class="company-client">
+                                NASA
+                            </p>
+                            <p class="quote-client">
+                                Love is like a butterfly, the more you chase it, the more it will elude you. 
+                                But if you turn your attention towards other things it will come and softly
+                                sit on your shoulder.         
+                            </p>
+                            <div class="logo-company">
+                                <img src="./img/logo-company3.png" alt="">
+                                <img src="./img/logo-company4.png" alt="">
+                                <img src="./img/logo-company1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container-news">
+            <h3 class="title-inner title-clients">
+                New & Blog
+            </h3>
+            <div class="news-wrapper">
+                <div class="news-item">
+                    <img src="./img/news-img1.png" alt="">
+                    <p class="news-text">
+                        There are many variations
+                    </p>
+                </div>
+                <div class="news-item">
+                    <img src="./img/news-img2.png" alt="">
+                    <p  class="news-text">
+                        There are many variations
+                    </p>
+                </div>
+                <div class="news-item">
+                    <img src="./img/news-img3.png" alt="">
+                    <p  class="news-text">
+                        There are many variations
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-hr"></div>
+    <footer>
+        <div class="container-footer footer-flex">
+            <div class="footer-logo">
+                <p class="header-logo__text black-logo">
+                    BE Arc
+                </p>
+                <p class="footer-logo-text">
+                    BeArt All Rights Resevered
+                    888 Brannan Street / San Francisco, California
+                </p>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li>Term & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Help</li>
+                    <li>Communication</li>
+                </ul>
+            </div>
+            <div class="footer-list2">
+                <ul>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-select">
+                    <p class="select-p">
+                        Select Language:
+                    </p>
+                        <select class="select" name="" id="">
+                            <option value="1">EN</option>
+                            <option value="2">UKR</option>
+                            <option value="3">AU</option>
+                            <option value="4">DM</option>
+                        </select>
+                </div>
+                <ul class="header-social">
+                    <li class="social-item">
+                         <a href="">
+                             <img src="./img/social-icon1.svg" alt="">
+                         </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="">
+                            <img src="./img/social-icon2.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                     <a href="">
+                         <img src="./img/social-icon3.svg" alt="">
+                     </a>
+                    </li>
+                    <li class="social-item">
+                     <a href="">
+                         <img src="./img/social-icon4.svg" alt="">
+                     </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <form class="modal-form" action="">
+                    <div>
+                        <input class="modal-input" placeholder="Enter your name" type="text"  id="name">
+                        <p id="error-name" class="error-message">
+                        </p>
+                    </div>
+                    <div>
+                        <input class="modal-input" placeholder="Enter your email" type="text"  id="email">
+                        <p id="error-email" class="error-message">
+                        </p>
+                    </div>
+                    <button class="button">
+                        Send
+                    </button>
+                </form>
+            </div>
+            <p class="close">
+                x
+            </p>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
+    <script src="./script/modal.js"></script>
 </body>
 </html>
