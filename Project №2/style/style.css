@@ -136,8 +136,8 @@ body{
 .vertical-text{
     transform: rotate(-90deg);
     position: absolute;
-    left: -86px;
-    top: 260px;
+    left: -190px;
+    top: 180px;
     width: 480px;
     z-index: 1;
 }
@@ -179,8 +179,8 @@ body{
 .bg-section{
     width: 950px;
     position: absolute;
-    left: 299px;
-    top: 77px;
+    left: 194px;
+    top: -2px;
     z-index: 1;
 }
 
@@ -452,6 +452,7 @@ body{
 body .slick-dots li button {
     opacity: 1;
 }
+
 body .slick-dots li.slick-active button:before {
     opacity: 1;
     background:  #FF9700;;
@@ -738,16 +739,16 @@ body .slick-dots li.slick-active button:before {
     }
 
     .header-logo{
-        left: 77.5px;
+        left: 79px;
     }
 
     .click-info{
-        margin-left: 77.5px;
+        margin-left: 79px;
     }
 
     .bg-section{
         max-width: 1040px;
-        margin-left: -220px;
+        margin-left: -194px;
     }
 
     .bg-img{
@@ -756,7 +757,7 @@ body .slick-dots li.slick-active button:before {
     
     .vertical-text{
        transform: rotate(0); 
-       left: 115px;
+       left: 30px;
     }
 
     .vertical-title, .vertical-p{
@@ -808,7 +809,7 @@ body .slick-dots li.slick-active button:before {
 
     .bg-section{
         max-width: 750px;
-        left: 387px;
+        left: 192px;
     }
 
     .bg-img{
@@ -817,7 +818,7 @@ body .slick-dots li.slick-active button:before {
     }
 
     .vertical-text{
-        left: 200px;
+        left: 30px;
     }
 
     .about-container{
@@ -834,6 +835,10 @@ body .slick-dots li.slick-active button:before {
         margin-bottom: 30px;
     }
 
+    .text-inner{
+        max-width: 400px;
+    }
+
     .services-container{
         flex-direction: column;
         align-items: center;
@@ -843,11 +848,202 @@ body .slick-dots li.slick-active button:before {
         left: 120px;
     }
 
-    /* .about-discription, .services-discription{
+    .about-discription, .services-discription, .title-inner{
         text-align: center;
     } 
 
-    .title-inner, .work-content, .wrapper, .wrapper-button{
+    .title-inner, .wrapper-button, .text-inner{
+        margin: 30px auto;
+    } 
+
+    .gallery_item{
+        padding: 0 15px;
+    }
+
+    .gallery-description {
+        max-width: 220px;
+        padding: 10px 1px 21px 9px;
+        left: 15px;
+    }
+
+    .under-build{
+        font-size: 15px;
+    }
+
+    .work-content, .wrapper{
+        margin-left: 50px;
+    }
+
+    .about-work{
+        text-align: start;
+    }
+}
+
+@media (max-width:800px){
+    .container{
+        max-width: 500px;
+    }
+
+    .header-logo{
+        max-width: 250px;
+        left: 150px;
+        padding: 5px 320px 5px 180px;
+    }
+
+    .header-logo__text{
+        font-size: 25px;
+        white-space: nowrap;
+    }
+
+    .click-info{
+        margin-left: 150px;
+        top: 0;
+        max-width: 250px;
+        padding: 20px 165px 20px 180px;
+    }
+
+    .header-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
+    .header-text, .header-social{
         margin: 0 auto;
-    }  */
+    }
+
+    .header-social{
+        margin-bottom: 10px;
+    }
+
+    .bg-section{
+        max-width: 500px;
+        left: 194px;
+    }
+
+    .bg-img{
+        width: 100%;
+    }
+
+    .vertical-text{
+        top: 100px;
+    }
+
+    .vertical-title{
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .vertical-p{
+        font-size: 25px;
+    }
+
+    .about-container{
+        margin-top: 230px;
+    }
+
+    .work-content, .wrapper{
+        margin-left: 50px;
+    }
+
+    .about-work{
+        font-size: 18px;
+    }
+
+    .services-img::before{
+        left: 0;
+    }
+
+    .clients-wrapper{
+        width: 500px; 
+    }
+
+    .clients-content{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .clients-img, .clients-text{
+        margin: 0 auto;
+    }
+
+    .clients-img{
+        margin-bottom: 40px;
+    }
+
+    .clients-img::before{
+        left: 0;
+    }
+
+    .quote-client::before{
+        left: -40px;
+    }
+
+    .logo-company > img:not(:last-of-type){
+        margin-right: 0;
+        
+    }
+
+    .logo-company > img{
+        margin-left: 25px;
+        width: 130px;
+    }
+
+    .news-wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-social, .footer-select{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 550px){
+    .container{
+        max-width: 430px;
+    }
+
+    .header-logo{
+        max-width: 250px;
+        left: 59px;
+        padding: 5px 281px 5px 150px;
+    }
+
+    .click-info{
+        margin-left: 59px;
+        max-width: 250px;
+        padding: 20px 135px 20px 141px;
+    }
+
+    .bg-section{
+        width: 100%;
+    }
+
+    .about-container{
+        margin-top: 250px;
+    }
+
+    .title-inner{
+        font-size: 25px;
+    }
+
+    .text-inner{
+        max-width: 400px;
+    }
+
+    .about-img > img, .services-img > img{
+        width: 100%;
+    }
+
+    .about-img::after, .services-img::before{
+        display: none;
+    }
+
+    .gallery_item, .clients-wrapper{
+        max-width: 430px;
+    }
 }
