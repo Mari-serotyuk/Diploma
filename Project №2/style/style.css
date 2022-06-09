@@ -1025,6 +1025,7 @@ body .slick-dots li.slick-active button:before {
 
     .about-container{
         margin-top: 250px;
+        margin-bottom: 50px;
     }
 
     .title-inner{
@@ -1035,15 +1036,80 @@ body .slick-dots li.slick-active button:before {
         max-width: 400px;
     }
 
-    .about-img > img, .services-img > img{
-        width: 100%;
+    .about-img{
+        height: 350px;
     }
 
-    .about-img::after, .services-img::before{
+    .about-img > img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-img::after, .services-img img, .services-img::before{
         display: none;
     }
 
-    .gallery_item, .clients-wrapper{
+    .gallery_item img{
+        margin: 0 auto;
+    }
+
+    .gallery-description, .under-build{
+        left: 100px;
+    }
+
+    .wrapper{
+        grid: repeat(2, 100px)/ auto-flow 200px;
+        margin-bottom: 15px;
+    }
+
+    .wrapper::before{
+        width: 360px;
+        height: 1px;
+        bottom: 100px;
+        left: 8px;
+    }
+    
+    .wrapper-item > img{
+        margin-right: 5px;
+    }
+    
+    .wrapper::after{
+        height: 150px;
+        top: 25px;
+        left: 170px;
+    }
+    
+    .clients, .services{
+        padding: 30px 0;
+    }
+
+    .clients-text{
         max-width: 430px;
     }
+
+    .quote-client{
+        max-width: 300px;
+    }
+
+    .logo-company img{
+        width: 100px;
+    }
+
+    .services-container{
+        margin: 20px auto;
+        margin-bottom: 0;
+    }
 }
+
+@media (max-width: 480px){
+    .container{
+        max-width: 310px;
+    }
+
+    .header-logo{
+        max-width: 250px;
+        left: 30px;
+        padding: 5px 200px 5px 110px;
+    }
+}
+

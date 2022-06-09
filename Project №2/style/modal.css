@@ -47,3 +47,21 @@
     height: 25px;
     margin-bottom: 20px;
 }
+
+@media (max-width: 550px){
+    .container{
+        max-width: 430px;
+    }
+
+    .modal{
+        max-width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .modal-form{
+        padding: 20px 20px;
+        max-width: 400px;
+    }
+}
