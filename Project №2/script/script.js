@@ -36,6 +36,15 @@ $('.projects-gallery').slick({
                 infinite: true,
                 dots: true,
             }
+        },
+        {
+            breakpoint: 800,
+            settings:{
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+            }
         }
     ]
 });
