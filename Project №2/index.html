@@ -736,18 +736,18 @@
     <div class="modal-overlay">
         <div class="modal">
             <div class="modal-content">
-                <form class="modal-form" action="">
+                <form method="POST" class="modal-form">
                     <div>
                         <input class="modal-input" placeholder="Enter your name" type="text"  id="name">
                         <p id="error-name" class="error-message">
                         </p>
                     </div>
                     <div>
-                        <input class="modal-input" placeholder="Enter your email" type="text"  id="email">
+                        <input class="modal-input" placeholder="Enter your email" type="email"  id="email">
                         <p id="error-email" class="error-message">
                         </p>
                     </div>
-                    <button class="button">
+                    <button id="button" class="button">
                         Send
                     </button>
                 </form>
